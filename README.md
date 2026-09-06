@@ -204,7 +204,17 @@ Photo-based pricing uses on-device OCR for reading bills and invoices.
 
 ## 📸 Screenshots
 
-_Add screenshots here._
+| Home | Add Pricing from Photo |
+|---|---|
+| ![Home](screenshots/home.jpg) | ![Photo Pricing](screenshots/photo-pricing.jpg) |
+
+| Insights | Price History |
+|---|---|
+| ![Insights](screenshots/insights.jpg) | ![Price History](screenshots/price-history.jpg) |
+
+| Similar Items | Recycle Bin |
+|---|---|
+| ![Similar Items](screenshots/similar-items.jpg) | ![Recycle Bin](screenshots/recycle-bin.jpg) |
 
 ## 📥 Download
 
