@@ -156,7 +156,7 @@ Quick actions are available from the **+** button:
 
 ### 🎨 Material You Design
 
-A clean Material 3 interface with dynamic colors and support for your device's light or dark system theme.
+A clean Material 3 interface with dynamic colors and support for System, Light, and Dark appearance modes.
 
 ### 📡 Works Offline
 
@@ -200,7 +200,7 @@ Photo-based pricing uses on-device OCR for reading bills and invoices.
 
 ## 📱 Version
 
-**Price Book 5.2 (150)**
+**Price Book 5.3 (151)**
 
 ## 📸 Screenshots
 
@@ -215,6 +215,8 @@ Photo-based pricing uses on-device OCR for reading bills and invoices.
 | Similar Items | Recycle Bin |
 |---|---|
 | ![Similar Items](screenshots/similar-items.jpg) | ![Recycle Bin](screenshots/recycle-bin.jpg) |
+
+> **Note:** Product names, prices and other values shown in screenshots are for demonstration purposes and may not represent actual current prices. UI examples are intended to demonstrate the app's features and workflow.
 
 ## 📥 Download
 
