@@ -220,7 +220,7 @@ Photo-based pricing uses on-device OCR for reading bills and invoices.
 
 ## 📥 Download
 
-Download the latest APK from the **Releases** section of this repository.
+[Download the latest APK](https://github.com/husainmade/PriceBook/releases)
 
 ## 🔒 Source Code
 
