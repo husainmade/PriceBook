@@ -200,7 +200,7 @@ Photo-based pricing uses on-device OCR for reading bills and invoices.
 
 ## 📱 Version
 
-**Price Book 5.3 (151)**
+**Price Book 5.3.2**
 
 ## 📸 Screenshots
 
