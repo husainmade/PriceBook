@@ -242,7 +242,7 @@ Photo-based pricing uses on-device OCR for reading bills and invoices.
 |---|---|
 | ![Similar Items](screenshots/similar-items.jpg) | ![Recycle Bin](screenshots/recycle-bin.jpg) |
 
-> **Note:** Product names, prices and other values shown in screenshots are for demonstration purposes and may not represent actual current prices. UI examples are intended to demonstrate the app's features and workflow.
+> **Note:** Screenshots are for illustration purposes. Product names, prices and other values shown are for demonstration purposes and may not represent actual current prices. The UI may have been improved or updated in newer versions, so some screens may differ slightly from the current version. UI examples are intended to demonstrate the app's features and workflow.
 
 ## 📥 Download
 
