@@ -80,11 +80,17 @@ Sort products by:
 
 Add, edit, and delete products easily.
 
-Long-press a product to edit it or enter selection mode for actions on multiple products.
+Long-press a product to select multiple entries for bulk category changes or deletion.
 
 ### 🧠 Remember Last Used Category & Unit
 
 Price Book remembers your most recently used category and unit, making repeated price entry faster and more convenient.
+
+### ⚡ Quick Price Update
+
+Quickly update a product's price without opening the full edit screen.
+
+Double-tap any product entry to enter a new price and price date. Both current and backdated prices are supported.
 
 ### 📷 Add Pricing from Photos
 
@@ -98,9 +104,9 @@ Price Book uses on-device OCR to read:
 
 Detected pricing is shown in a review screen before anything is added, allowing you to check and edit every entry.
 
-Camera captures can be cropped and rotated before processing.
+Images from the Gallery and Camera can be **cropped and rotated** before processing.
 
-Discount and GST are entered manually during photo-based entry, with GST options for **0%, 5%, and 18%**.
+Discount and GST can be entered manually during photo-based entry, with GST options for **0%, 5%, and 18%**.
 
 **Always double-check every entry before adding. Photo reading can occasionally misread item names or rates.**
 
@@ -109,6 +115,8 @@ Discount and GST are entered manually during photo-based entry, with GST options
 Keep track of how product prices change over time.
 
 When a product's price is updated, its previous price is preserved in its price history, allowing you to see how the price has changed instead of only seeing the current price.
+
+Backdated prices can be added without incorrectly replacing the current price.
 
 ### 📊 Insights
 
@@ -144,15 +152,33 @@ Back up your Price Book to Excel and restore it whenever needed.
 - Complete product price history is preserved during Export and Import.
 - Categories and units are preserved as well.
 
+### 🧩 Widgets & Shortcuts
+
+Quickly access common Price Book actions from your home screen or app icon:
+
+- **Search Price Book**
+- **Add Manually**
+- **Scan with Camera**
+- **Scan from Gallery**
+
+The Search widget and shortcut open the Price Book search field directly.
+
 ### 👆 Gesture Controls
 
 Quick actions are available from the **+** button:
 
-- **Tap +** → Open Manual Entry, Camera and Gallery.
-- **Long-press +** → Open Manual Entry directly.
-- **Swipe up on +** → Open Gallery.
-- **Double-tap +** → Open Camera.
-- **Swipe left on Home** → Open the navigation drawer.
+- **Tap +** → Show **Add Manually**, **Scan with Camera** and **Scan from Gallery**.
+- **Long-press +** → **Add Manually** directly.
+- **Swipe up on +** → **Scan from Gallery** directly.
+- **Double-tap +** → **Scan with Camera** directly.
+- **Swipe from the left edge on Home** → Open the **navigation drawer**.
+- **Double-tap an entry** → Quickly update its price.
+- **Long-press an entry** → Select multiple entries for bulk category changes or deletion.
+- **Long-press a price-history record** → Delete that historical price.
+
+### 💡 Tips
+
+The **Tips** page provides a quick reference for hidden gestures and useful interactions throughout the app.
 
 ### 🎨 Material You Design
 
@@ -200,7 +226,7 @@ Photo-based pricing uses on-device OCR for reading bills and invoices.
 
 ## 📱 Version
 
-**Price Book 5.3.2**
+**Price Book 5.3.4**
 
 ## 📸 Screenshots
 
