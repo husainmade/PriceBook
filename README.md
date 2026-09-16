@@ -261,11 +261,24 @@ The default categories and units are fully customizable, so the app can be adapt
 
 ## 📱 Screenshots
 
+| Home | Add Pricing from Photo |
+|---|---|
+| ![Home](screenshots/home.jpg) | ![Photo Pricing](screenshots/photo-pricing.jpg) |
+
+| Insights | Price History |
+|---|---|
+| ![Insights](screenshots/insights.jpg) | ![Price History](screenshots/price-history.jpg) |
+
+| Similar Items | Recycle Bin |
+|---|---|
+| ![Similar Items](screenshots/similar-items.jpg) | ![Recycle Bin](screenshots/recycle-bin.jpg) |
+
+> **Note:** Screenshots are for illustration purposes. Product names, prices and other values shown are for demonstration purposes and may not represent actual current prices. The UI may have been improved or updated in newer versions, so some screens may differ slightly from the current version. UI examples are intended to demonstrate the app's features and workflow.
 Screenshots below show the current Price Book interface and its major features.
 
 ## 📥 Download
 
-Download the latest APK from the [Releases](releases) section of this repository.
+[Download the latest APK](https://github.com/husainmade/PriceBook/releases)
 
 ## 🔐 Source Code
 
@@ -275,9 +288,11 @@ This repository is provided for releases, documentation and project information.
 
 ## 💬 Feedback
 
-Found a bug, have a suggestion, or have an idea for improving Price Book?
+Found a bug or have a suggestion?
 
-Open an issue in this repository or get in touch with the developer.
+Open an issue in the [Price Book GitHub repository](https://github.com/husainmade/PriceBook/issues) and include as much detail as possible.
+
+For bug reports, please include the steps needed to reproduce the problem and, when possible, screenshots or other relevant details.
 
 ## 👨‍💻 Developer
 
