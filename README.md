@@ -1,266 +1,283 @@
 # Price Book
 
-**A simple, practical way to manage product prices.**
+A simple, fast and privacy-focused Android app for managing product prices.
 
-Price Book is a fast, flexible utility for recording, organizing, and referencing product prices on the go.
+Price Book helps you keep your product prices organized by **Category → Product → Cost → Unit**, making it easy to quickly check and update prices whenever you need them.
 
-Designed to stay simple and focused, Price Book lets you build and maintain your own price reference without complicated menus, unnecessary features, or clutter.
+## ✨ Features
 
-**Category → Product → Price → Unit**
+### 📂 Categories & Units
 
-## 🛠️ Features
-
-### 🗂️ Categories & Units
-
-Price Book comes with default categories and units to help you get started quickly.
-
-**Default categories:**
-- Hardware
-- Hand Tools
-- Power Tools
-- Plumbing
-- Electrical
-- Paint
-- Pipes & Fittings
-- Fasteners
-- General
-
-**Default units:**
-- Piece
-- Pair
-- Set
-- Box
-- Packet
-- Kg
-- Gram
-- Litre
-- Meter
-- Foot
-- Dozen
-
-These defaults are only a starting point. You can customize them according to your own products and requirements:
-
-- Add new categories and units.
-- Rename existing categories and units.
-- Remove categories and units you don't need.
+- Organize products into customizable categories.
+- Add, edit or remove categories.
+- Choose from flexible units of measurement.
+- Create your own units when needed.
+- Remember the last used category and unit for faster entry.
 
 ### 💰 Fast Price Reference
 
-Find product prices quickly when preparing quotations, estimating jobs, checking purchase prices, or making business decisions.
+- Store product prices in one place.
+- Quickly check the latest price of any product.
+- Keep different products and variants organized.
+- View price changes over time.
 
-### 🔍 Instant Search
+### 🔎 Instant Search
 
-Search quickly by product name or category.
-
-Search supports partial text and is not affected by capitalization.
+- Search products instantly by name.
+- Search works across your saved product list.
+- Quickly find the price you need without browsing through categories.
 
 ### ↕️ Sort Products
 
-Sort products by:
+Sort products using multiple options, including:
 
-**Price**
-- ₹ Low → High
-- ₹ High → Low
+- Price — Low to High
+- Price — High to Low
+- Date — Added, Newest First
+- Date — Added, Oldest First
+- Date — Updated, Newest First
+- Date — Updated, Oldest First
 
-**Date**
-- Added — Newest first
-- Added — Oldest first
-- Updated — Newest first
-- Updated — Oldest first
+### ➕ Easy Product Management
 
-**Name**
-- A → Z
-- Z → A
-
-**Price Change**
-- Biggest increase ↑
-- Biggest decrease ↓
-
-### 📝 Easy Product Management
-
-Add, edit, and delete products easily.
-
-Long-press a product to select multiple entries for bulk category changes or deletion.
-
-### 🧠 Remember Last Used Category & Unit
-
-Price Book remembers your most recently used category and unit, making repeated price entry faster and more convenient.
+- Add products manually.
+- Edit product details and prices.
+- Update existing prices without creating duplicate entries.
+- Record pricing with the relevant date.
+- Keep product information organized and easy to review.
 
 ### ⚡ Quick Price Update
 
-Quickly update a product's price without opening the full edit screen.
-
-Double-tap any product entry to enter a new price and price date. Both current and backdated prices are supported.
+- Double-tap any product entry to quickly update its price.
+- Enter a new price and date without going through the full product-edit workflow.
+- Useful when supplier prices change frequently.
 
 ### 📷 Add Pricing from Photos
 
-Add product pricing directly from bills or invoices using your **Camera or Gallery**.
+Add product pricing directly from bills or invoices using your **Camera** or **Gallery**.
 
-Price Book uses on-device OCR to read:
+#### On-device OCR
+
+Price Book includes on-device OCR for reading:
 
 - Item
 - Rate
 - Unit
 
-Detected pricing is shown in a review screen before anything is added, allowing you to check and edit every entry.
+Images from the Camera and Gallery can be cropped and rotated before processing.
 
-Images from the Gallery and Camera can be **cropped and rotated** before processing.
+Detected pricing is shown for review before anything is added to your Price Book.
 
-Discount and GST can be entered manually during photo-based entry, with GST options for **0%, 5%, and 18%**.
+#### 🤖 AI Bill Extraction
 
-**Always double-check every entry before adding. Photo reading can occasionally misread item names or rates.**
+For more advanced bill and invoice extraction, Price Book can optionally use AI.
 
-### 📈 Price History
+AI Bill Extraction can extract:
 
-Keep track of how product prices change over time.
+- Product name
+- Unit
+- Rate
+- Discount (%)
+- GST (%)
 
-When a product's price is updated, its previous price is preserved in its price history, allowing you to see how the price has changed instead of only seeing the current price.
+The extracted information is processed through the existing **Review Products** workflow, allowing you to check and edit the detected products before adding them.
 
-Backdated prices can be added without incorrectly replacing the current price.
+AI extraction also calculates the resulting cost using the extracted rate, discount and GST where applicable.
 
-### 📊 Insights
+> Always review AI-extracted information before adding it to your Price Book.
 
-Get a quick overview of your price data at a glance.
+### 🔌 Multiple AI Providers
 
-Insights helps you see pricing activity and price changes across your Price Book, making it easier to understand your data without checking products one by one.
+AI Bill Extraction supports multiple providers:
 
-### 🔎 Similar Items
+- Groq
+- Google Gemini
+- OpenAI
+- HF / OpenAI-compatible providers
 
-Find products that may have been entered more than once.
+You can configure providers individually using their respective API key or token.
 
-Similar Items identifies potentially similar product names, including variations in spacing, formatting, word order, and product dimensions.
+Each provider has its own:
 
-Each suggestion is presented for review before anything is merged.
+- API key/token
+- Model selection
+- Usage and limits information
+- Data & privacy information
 
-When merging similar products, you can independently choose the **name, category, and unit** to retain. The most recently updated price remains current, while the combined price history is preserved.
+### 🔄 Automatic Model Selection
 
-### ♻️ Recycle Bin
+Price Book supports **Automatic** model selection.
 
-Deleted products are moved to the Recycle Bin instead of being immediately removed.
+When available, Price Book can retrieve the provider's currently available models instead of relying only on a fixed model list.
 
-- Restore deleted products when needed.
-- Permanently delete products with **Delete Forever**.
-- Deleted products are automatically removed after 30 days.
-- Product details and complete price history are preserved while in the Recycle Bin.
+You can also manually select a specific supported model when required.
+
+### 🔁 Automatic Provider Fallback
+
+When using Automatic provider selection, Price Book can try another configured provider when the selected provider cannot process the request because of applicable availability or usage limitations.
+
+This allows AI Bill Extraction to continue when another configured provider is available.
+
+### 🔐 AI Provider Data & Privacy
+
+AI Bill Extraction is optional.
+
+Your original photo stays on your phone. **Only the crop you confirm is sent to the selected AI provider.**
+
+For better privacy, crop tightly around the product table before confirming the image so unrelated supplier, customer or total information is not included.
+
+Provider data handling can vary:
+
+- **Groq:** Inference data is not retained by default. GroqCloud also provides Zero Data Retention (ZDR) controls for additional protection.
+- **Google Gemini:** Google currently states that Gemini API Free Tier content may be used to improve its products.
+- **OpenAI:** Data is handled according to the current OpenAI API data-use and retention policies.
+- **HF / OpenAI-compatible:** Data handling depends on the selected provider or endpoint.
+
+Review the selected provider's current policies and terms before processing sensitive information.
+
+API tokens are encrypted using the Android Keystore and stored separately for each AI provider.
+
+### 📊 Price History
+
+- Keep a history of product prices.
+- Track when prices were added or updated.
+- View previous prices for the same product.
+- Useful for comparing supplier pricing over time.
+
+### 📈 Insights
+
+Get useful information from your saved pricing data, including price changes and other product-level insights.
+
+### 🔍 Similar Items
+
+- Find products with similar names or details.
+- Helps identify possible duplicate entries.
+- Review similar products before adding new entries.
+
+### 🗑️ Recycle Bin
+
+- Deleted products are moved to the Recycle Bin.
+- Restore products when needed.
+- Permanently remove unwanted entries.
 
 ### 📊 Excel Backup & Restore
 
-Back up your Price Book to Excel and restore it whenever needed.
+- Export your Price Book data to Excel.
+- Keep an offline backup of your product and pricing data.
+- Restore your saved data when needed.
 
-- Export your product data to Excel.
-- Restore your data from an Excel backup.
-- Complete product price history is preserved during Export and Import.
-- Categories and units are preserved as well.
+### 📱 Widgets & Shortcuts
 
-### 🧩 Widgets & Shortcuts
+Use home-screen widgets and shortcuts for faster access to common actions.
 
-Quickly access common Price Book actions from your home screen or app icon:
+Available shortcuts/widgets include:
 
-- **Search Price Book**
-- **Add Manually**
-- **Scan with Camera**
-- **Scan from Gallery**
+- Search
+- Add Manually
+- Scan with Camera
+- Scan from Gallery
 
-The Search widget and shortcut open the Price Book search field directly.
+The Search widget can open the Price Book search field directly.
 
 ### 👆 Gesture Controls
 
-Quick actions are available from the **+** button:
+Quickly access common actions using gestures.
 
-- **Tap +** → Show **Add Manually**, **Scan with Camera** and **Scan from Gallery**.
-- **Long-press +** → **Add Manually** directly.
-- **Swipe up on +** → **Scan from Gallery** directly.
-- **Double-tap +** → **Scan with Camera** directly.
-- **Swipe from the left edge on Home** → Open the **navigation drawer**.
-- **Double-tap an entry** → Quickly update its price.
-- **Long-press an entry** → Select multiple entries for bulk category changes or deletion.
-- **Long-press a price-history record** → Delete that historical price.
+- Swipe gestures for navigation
+- Double-tap for Quick Price Update
+- Other supported gestures are available within the app
 
 ### 💡 Tips
 
-The **Tips** page provides a quick reference for hidden gestures and useful interactions throughout the app.
+A dedicated Tips section provides useful information about Price Book's features and workflows.
 
 ### 🎨 Material You Design
 
-A clean Material 3 interface with dynamic colors and support for System, Light, and Dark appearance modes.
+- Built using modern Android design principles.
+- Supports Android dynamic colors.
+- Choose between:
+  - System
+  - Light
+  - Dark
+- Interface adapts to your device appearance settings.
 
-### 📡 Works Offline
+### 📶 Works Offline
 
-Price Book does not require an internet connection for its core features.
+Price Book is designed to remain fully usable offline for its core features.
 
-Your products, prices, categories, units, and price history are stored locally on your device.
+- Your product and pricing data stays on your device.
+- Manual product entry works offline.
+- Search and sorting work offline.
+- Price history and insights work offline.
+- Backup and restore work locally.
+- Built-in on-device OCR does not require an internet connection.
 
-Photo-based pricing uses on-device OCR, so bill and invoice images do not need to be sent to an online service for processing.
+**AI Bill Extraction is optional and requires an internet connection when enabled.**
 
-### ⚡ Simple & Lightweight
+If AI Bill Extraction is disabled, Price Book's normal features continue to work fully offline.
 
-Open the app and start recording prices immediately.
+### 🔒 Privacy
 
-No sign-up, account, or unnecessary complexity.
+Price Book does not require an account or sign-in.
 
-## 📋 Ideal For
+Your normal product catalog and price data are stored locally on your device.
 
-### Contractors & Tradespeople
+There is no cloud dependency for the core Price Book features.
 
-Maintain an up-to-date price reference for materials and products used in quotations, estimates, and projects.
+Photo-based pricing using the built-in on-device OCR is processed locally and does not require an online service.
 
-### Workshops & Handymen
+When **AI Bill Extraction** is enabled:
 
-Keep track of purchase prices for consumables, replacement parts, tools, and commonly purchased supplies.
+- The original photo remains on your device.
+- Only the crop confirmed by you is sent to the selected AI provider.
+- AI processing requires an internet connection.
+- The AI provider's own data policies, retention rules and usage limits apply.
+- API tokens are encrypted using Android Keystore.
+- Each provider's token is stored separately.
 
-### DIYers & Home Renovators
+Price Book does not set or control AI provider quotas, rate limits or charges.
 
-Record and compare material prices while planning and working on home-improvement projects.
+### 📦 Simple & Lightweight
 
-### Small Businesses
+Price Book is designed to stay focused on its core purpose:
 
-Maintain a simple, personal price reference for frequently purchased or quoted products.
+**Quickly record, organize and reference product prices.**
 
-## 🔒 Privacy
+AI Bill Extraction is an optional feature and does not replace the normal offline Price Book workflow.
 
-Price Book is designed for personal and private use.
+## 🏪 Ideal For
 
-Your product catalog and price data are stored locally on your device. The app does not require an account or sign-in, and your data is not dependent on a cloud service.
+Price Book can be useful for anyone who regularly needs to maintain and reference product prices, including:
 
-Photo-based pricing uses on-device OCR for reading bills and invoices.
+- Retailers
+- Shopkeepers
+- Wholesalers
+- Traders
+- Purchase teams
+- Small businesses
+- Anyone who wants a simple personal price reference
 
-## 📱 Version
+The default categories and units are fully customizable, so the app can be adapted to different types of businesses.
 
-**Price Book 5.3.4**
+## 📱 Screenshots
 
-## 📸 Screenshots
-
-| Home | Add Pricing from Photo |
-|---|---|
-| ![Home](screenshots/home.jpg) | ![Photo Pricing](screenshots/photo-pricing.jpg) |
-
-| Insights | Price History |
-|---|---|
-| ![Insights](screenshots/insights.jpg) | ![Price History](screenshots/price-history.jpg) |
-
-| Similar Items | Recycle Bin |
-|---|---|
-| ![Similar Items](screenshots/similar-items.jpg) | ![Recycle Bin](screenshots/recycle-bin.jpg) |
-
-> **Note:** Screenshots are for illustration purposes. Product names, prices and other values shown are for demonstration purposes and may not represent actual current prices. The UI may have been improved or updated in newer versions, so some screens may differ slightly from the current version. UI examples are intended to demonstrate the app's features and workflow.
+Screenshots below show the current Price Book interface and its major features.
 
 ## 📥 Download
 
-[Download the latest APK](https://github.com/husainmade/PriceBook/releases)
+Download the latest APK from the [Releases](releases) section of this repository.
 
-## 🔒 Source Code
+## 🔐 Source Code
 
-Price Book is currently a closed-source application.
+Price Book is currently distributed as a closed-source application.
 
-The source code is maintained in a private repository and is not included here.
+This repository is provided for releases, documentation and project information.
 
 ## 💬 Feedback
 
-Found a bug or have a suggestion?
+Found a bug, have a suggestion, or have an idea for improving Price Book?
 
-Open an issue in this repository and include as much detail as possible.
-
-For bug reports, please include the steps needed to reproduce the problem and, when possible, screenshots or other relevant details.
+Open an issue in this repository or get in touch with the developer.
 
 ## 👨‍💻 Developer
 
