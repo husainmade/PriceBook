@@ -46,6 +46,16 @@ Sort products using multiple options, including:
 - Record pricing with the relevant date.
 - Keep product information organized and easy to review.
 
+### 👁️ View Only Mode
+
+Use Price Book as a read-only product catalogue when you only need to browse and reference prices.
+
+Useful when the app is being used for **quotations, price checking, sales counters, or by someone who should only view the catalogue without changing its data**.
+
+View Only Mode disables editing and product-management features while keeping essential functions such as **Search** and **Import** available.
+
+An **mPIN** can be used to prevent View Only Mode from being disabled without authorization.
+
 ### ⚡ Quick Price Update
 
 - Double-tap any product entry to quickly update its price.
@@ -160,11 +170,13 @@ Get useful information from your saved pricing data, including price changes and
 - Restore products when needed.
 - Permanently remove unwanted entries.
 
-### 📊 Excel Backup & Restore
+### 📊 Excel Import & Export
 
 - Export your Price Book data to Excel.
+- Import Price Book data from files created or exported by Price Book.
+- Price Book identifies its own exported files so they can be safely restored or transferred.
+- Excel files that were not created by Price Book are not treated as Price Book data.
 - Keep an offline backup of your product and pricing data.
-- Restore your saved data when needed.
 
 ### 📱 Widgets & Shortcuts
 
@@ -255,6 +267,7 @@ Price Book can be useful for anyone who regularly needs to maintain and referenc
 - Traders
 - Purchase teams
 - Small businesses
+- Sales counters and staff who need read-only price access
 - Anyone who wants a simple personal price reference
 
 The default categories and units are fully customizable, so the app can be adapted to different types of businesses.
