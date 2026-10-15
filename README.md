@@ -213,7 +213,12 @@ A dedicated Tips section provides useful information about Price Book's features
   - Dark
 - Interface adapts to your device appearance settings.
 
-### 📶 Works Offline
+### 🔤 Font Selection
+
+- Choose from a range of fonts to personalize the app's appearance.
+- Roboto is the default font, with System Default also available.
+
+### 📶 Offline by Default
 
 Price Book is designed to remain fully usable offline for its core features.
 
@@ -241,7 +246,7 @@ Photo-based pricing using the built-in on-device OCR is processed locally and do
 When **AI Bill Extraction** is enabled:
 
 - The original photo remains on your device.
-- Only the crop confirmed by you is sent to the selected AI provider.
+- **Only the crop confirmed by you is sent to the selected AI provider**.
 - AI processing requires an internet connection.
 - The AI provider's own data policies, retention rules and usage limits apply.
 - API tokens are encrypted using Android Keystore.
