@@ -65,7 +65,7 @@ An **mPIN** can be used to prevent View Only Mode from being disabled without au
 ### 📷 Add Pricing from Photos
 
 Add product pricing directly from bills or invoices using your **Camera** or **Gallery**.
-> Bill extraction is generally more accurate with clear, legible bills in English. Handwritten bills may also be processed accurately, while unclear text, other languages, or complex layouts may affect accuracy. AI Bill Extraction supports images only (not PDFs).
+> Bill extraction is generally more accurate with clear, legible bills in English. Handwritten bills may also be processed accurately, while unclear text, other languages, or complex layouts may affect accuracy.
 
 #### On-device OCR
 
